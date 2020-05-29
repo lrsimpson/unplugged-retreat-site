@@ -385,7 +385,7 @@ aside {
       /* Header */
 
       header {
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 33px 0;
       }
 
@@ -428,12 +428,12 @@ aside {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         flex-basis: 50%;
       }
 
       .features .features-item-description {
-          width: 50%;
+          width: 62%;
       }
 
       /* Reviews */
@@ -494,6 +494,10 @@ aside {
       /* ==========================================================================
    FAQ Page
    ========================================================================== */
+   header {
+     padding: 15px 0;
+   }
+
     .faq .content-wrapper {
         justify-content: space-between;
     }
@@ -510,9 +514,63 @@ aside {
 
 /** Desktop styles here **/
 @media only screen and (min-width: 1200px) {
-  .features article {
-    width: 30%;
-  }
+      .content-wrapper {
+           max-width: 960px;
+      }
+
+       /* Hero */
+      .hero-area h1 {
+          width: 60%;
+      }
+
+      /* Aside */
+      aside .content-wrapper {
+          justify-content: space-around;
+      }
+
+      aside .content-wrapper .form-description,
+      aside .content-wrapper .form {
+          width: 30%;
+      }
+
+      /* Features */
+      .features h2 {
+          width: 90%;
+      }
+
+      .features article {
+          flex-basis: 33%;
+      }
+
+      /* Reviews */
+      .reviews article div {
+          width: 42%;
+      }
+
+  /* ==========================================================================
+     About Page
+     ========================================================================== */
+      .mission h2,
+      .contact-section .content-wrapper h2 {
+          width: 95%;
+      }
+
+      .contact-section .content-wrapper h2 {
+          margin-bottom: 50px;
+      }
+
+
+  /* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+      .faq h2 {
+          width: 100%;
+      }
+
+      .faq-content {
+          flex-basis:40%;
+      }
+
 }
 /* ==========================================================================
    Print styles.
