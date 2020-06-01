@@ -361,41 +361,42 @@ input[type=button] {
 /*  ------------------------------------------------------------------
     About page
     ------------------------------------------------------------------ */
-.mission {
-  background-color: #527158;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
-.contact-section {
-  background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+    .mission {
+      background-color: #527158;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
 
-.contact-content p {
-  margin: 0;
-}
+    .map figure {
+      width: 100%;
+      height: 0;
+      padding-bottom: 125%;
+      overflow: hidden;
+      position: relative;
+    }
 
-.map figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 80%;
-    overflow: hidden;
-    position: relative;
-}
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-.map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+    .contact-section {
+      background-color: #2a423a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    }
+
+    .contact-content p {
+      margin: 0;
+    }
 
 /*  -----------------------------------------------------------------------
     FAQ page
@@ -660,29 +661,34 @@ input[type=button] {
          ========================================================================== */
 
          .mission-content {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding-top: 20px;
-          }
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding-top: 20px;
+         }
 
-          .mission-content p {
-              width: 45%;
-          }
+         .mission-content p {
+           width: 45%;
+         }
 
-          .contact-section .content-wrapper h2 {
-              width: 80%
-          }
+         .map figure {
+           padding-bottom: 45.5%;
+         }
 
-          .contact-content {
-              display: flex;
-              justify-content: space-between;
-              align-items: flex-start;
-      }
+         .contact-section .content-wrapper h2 {
+           width: 80%;
+         }
 
-      .contact-content h4 {
-        font-size: 1.5em;
-      }
+         .contact-content {
+           display: flex;
+           justify-content: space-between;
+           align-items: flex-start;
+         }
+
+         .contact-content h4 {
+           font-size: 1.5em;
+         }
+
 
       /* ==========================================================================
    FAQ Page
@@ -782,16 +788,20 @@ input[type=button] {
   /* ==========================================================================
      About Page
      ========================================================================== */
-      .mission h2,
-      .contact-section .content-wrapper h2 {
-          width: 95%;
-          font-size: 3em;
-      }
 
-      .contact-content h4 {
-        font-size: 1.875em;
-      }
+     .map figure {
+       padding-bottom: 37.5%;
+     }
 
+     .mission h2,
+     .contact-section .content-wrapper h2 {
+         width: 95%;
+         font-size: 3em;
+     }
+
+     .contact-content h4 {
+       font-size: 1.875em;
+     }
 
   /* ==========================================================================
      FAQ Page
