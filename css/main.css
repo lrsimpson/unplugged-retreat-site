@@ -143,10 +143,19 @@ address {
  font-style: normal;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
+
 /****** Base Header-Footer Styles ******/
 
 header,
@@ -168,6 +177,14 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
@@ -241,6 +258,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/hero-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #333;
 }
 
 .hero-area h1 {
@@ -288,8 +310,10 @@ input[type=button] {
 
 
 /** Features **/
-
 .features {
+  background: url('../img/features-image.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -299,14 +323,9 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
-.features p {
-  margin: 0;
-  text-align: center;
-}
-
 .features article {
   width: 63%;
-  marigin: 30px 0;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -314,6 +333,11 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
 }
 
 /** Reviews **/
@@ -485,12 +509,6 @@ input[type=button] {
           margin: 100px 0;
       }
 
-      /* General styles */
-      .content-wrapper {
-        max-width: 640px;
-        margin: 100px 0;
-      }
-
       h2 {
         font-size: 2.25em;
         line-height: 1.333;
@@ -512,6 +530,10 @@ input[type=button] {
           justify-content: space-between;
       }
 
+      header figure {
+        width: 30%;
+      }
+
       header nav {
           width:20%;
       }
@@ -525,7 +547,9 @@ input[type=button] {
       }
 
       /* Hero Area */
-
+        .hero-area {
+          min-height: 600px;
+        }
         .hero-area h1 {
           font-size: 3em;
           line-height: 1;
@@ -551,6 +575,7 @@ input[type=button] {
       .features h2 {
         margin-bottom: 20px;
       }
+
       .features article {
         display: flex;
         justify-content: center;
@@ -560,7 +585,7 @@ input[type=button] {
       }
 
       .features .features-item-description {
-          width: 62%;
+        width: 62%;
       }
 
       /* Reviews */
@@ -572,14 +597,17 @@ input[type=button] {
       .reviews h2 {
         width: 85%;
       }
+
+      .reviews article figure,
       .reviews article div {
-          width: 49%;
+        width: 49%;
       }
 
       .reviews h3 {
         width: 75%;
         margin: 0;
       }
+
       /* Footer */
       footer .content-wrapper {
           width: 65%
@@ -590,6 +618,7 @@ input[type=button] {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
       }
 
       footer .contact {
@@ -669,9 +698,14 @@ input[type=button] {
         padding: 15px 0;
       }
 
-      .content-wrapper {
-           max-width: 960px;
+      .hero-area {
+        min-height: 775px;
       }
+
+      .content-wrapper {
+         max-width: 960px;
+      }
+
       h2 {
         font-size: 2.25em;
       }
@@ -689,7 +723,7 @@ input[type=button] {
        /* Hero */
       .hero-area h1 {
           font-size: 3.75em;
-          width: 60%;
+          width: 80%;
       }
 
       /* Aside */
@@ -707,27 +741,28 @@ input[type=button] {
       }
 
       /* Features */
+
       .features h2 {
-          width: 90%;
+        width: 90%;
       }
 
       .features article {
-          flex-basis: 33%;
+        flex-basis: 33%;
       }
 
       /* Reviews */
+      .reviews article div {
+        width: 42%;
+      }
 
       .reviews h2 {
         padding-bottom: 50px;
       }
 
-      .reviews article div {
-          width: 42%;
-      }
-
       footer h4 {
         font-size: 1.875em;
       }
+
   /* ==========================================================================
      About Page
      ========================================================================== */
