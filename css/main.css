@@ -244,10 +244,12 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
 }
+
 footer .social-icons i {
 	font-size: 2em;
   padding: 10px;
 }
+
 footer .copyright {
   margin: 20px 0;
 }
@@ -405,6 +407,13 @@ input[type=button] {
       margin: 0;
     }
 
+    footer .social {
+      color: white;
+    }
+    footer .social-icons i {
+    	font-size: 2em;
+      padding: 10px;
+    }
 /*  -----------------------------------------------------------------------
     FAQ page
     ----------------------------------------------------------------------- */
